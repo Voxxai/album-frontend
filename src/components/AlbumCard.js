@@ -7,7 +7,6 @@ const AlbumCard = ({ id, name, artist, imageUrl }) => {
     <Link to={`/albums/${id}`}>
       <Card>
         <CardHeader
-          avatar={<Avatar alt={artist} src={imageUrl} />}
           title={
             <Typography variant="body1" noWrap sx={{ textOverflow: 'ellipsis', overflow: 'hidden' }}>
               {name}

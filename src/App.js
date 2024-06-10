@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, Container } from '@mui/material';
 import AlbumOverview from './components/AlbumOverview';
+import AlbumDetail from './components/AlbumDetail';
 
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
       <Container maxWidth="md" style={{ marginTop: '2rem' }}>
         <Routes>
           <Route path="/" element={<AlbumOverview />} />
+          <Route path="/albums/:id" element={<AlbumDetail />} />
+
         </Routes>
       </Container>
     </BrowserRouter>

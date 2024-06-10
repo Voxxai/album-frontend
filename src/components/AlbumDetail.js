@@ -18,7 +18,7 @@ function AlbumDetail() {
       });
 
       if (response.ok) {
-        navigate(`/Album/${id}`); // Herlaad de pagina na succesvolle update
+        navigate(`/`); // Herlaad de pagina na succesvolle update
       } else {
         throw new Error('Album bijwerken mislukt');
       }

@@ -5,7 +5,7 @@ const useAlbums = () => {
 
   useEffect(() => {
     const endpoint = `${process.env.REACT_APP_API_URL}/Album`;
-
+    
     fetch(endpoint, {  
       method: 'GET'   
     })
@@ -17,7 +17,6 @@ const useAlbums = () => {
       })
       .then((data) => {
         setAlbums(data);
-        console.log(data);
       })
       .catch((error) => {
         console.error('Er is een fout opgetreden bij het ophalen van de albums:', error);

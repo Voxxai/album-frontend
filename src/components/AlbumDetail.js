@@ -25,7 +25,6 @@ function AlbumDetail() {
       }
     } catch (error) {
       console.error('Error updating album:', error);
-      // Hier kun je eventueel een foutmelding tonen aan de gebruiker
     }
   };
 

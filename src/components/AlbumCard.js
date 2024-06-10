@@ -14,8 +14,7 @@ const AlbumCard = ({ id, name, artist, imageUrl }) => {
         <CardMedia
           component="img"
           // make the image fit the card
-          width="194"
-          height="194"
+          width="100%"
           image={imageUrl}
           alt={name}
         />

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid } from '@mui/material';
+import { CircularProgress, Grid } from '@mui/material';
 import AlbumCard from './AlbumCard';
 import useAlbums from '../hooks/useAlbums'; 
 
@@ -11,7 +11,7 @@ function AlbumOverview() {
       <h2>Album Overzicht</h2>
 
       {albums.length === 0 ? ( 
-        <p>Albums worden geladen...</p>
+        <CircularProgress />
       ) : (
         <Grid container spacing={2}>
           {albums.map((album) => (

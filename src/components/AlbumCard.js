@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardHeader, CardMedia, Avatar, Typography } from '@mui/material';
+import { Card, CardHeader, CardMedia, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 const AlbumCard = ({ id, name, artist, imageUrl }) => {

@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, Container } from '@mui/material';
 import AlbumOverview from './components/AlbumOverview';
 import AlbumDetail from './components/AlbumDetail';
+import CreateAlbum from './components/createAlbum';
 
 
 function App() {
@@ -22,6 +23,8 @@ function App() {
         <Routes>
           <Route path="/" element={<AlbumOverview />} />
           <Route path="/albums/:id" element={<AlbumDetail />} />
+          <Route path="/new" element={<CreateAlbum />} />
+
 
         </Routes>
       </Container>

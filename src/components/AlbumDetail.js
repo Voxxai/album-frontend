@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { Typography, CircularProgress, Button } from '@mui/material';
+import { Typography, CircularProgress } from '@mui/material';
 import AlbumForm from './AlbumForm';
 import useAlbum from '../hooks/useAlbum';
 
